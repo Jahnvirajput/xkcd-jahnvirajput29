@@ -57,10 +57,12 @@ function fetchAndFormatXKCDData() {
     }
 
     $data = json_decode($json, true);
-    return "<h2>{$data['safe_title']}</h2>
-            <img src='{$data['img']}' alt='XKCD Comic' style='max-width:100%;height:auto;'>
-            <p>{$data['alt']}</p>";
+
+    return "<h2>XKCD Comic</h2>
+            <img src='{$data['img']}' alt='XKCD Comic'>
+            <p><a href='http://localhost/xkcd-jahnvirajput29/src/unsubscribe.php' id='unsubscribe-button'>Unsubscribe</a></p>";
 }
+
 
 function sendXKCDUpdatesToSubscribers() {
     $file = __DIR__ . '/registered_emails.txt';

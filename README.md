@@ -1,3 +1,4 @@
+ HEAD
 # XKCD
 
 This project is a PHP-based email verification system where users register using their email, receive a verification code, and subscribe to get a random XKCD comic every day. A CRON job fetches a random XKCD comic and sends it to all registered users every 24 hours.
@@ -235,3 +236,7 @@ function sendXKCDUpdatesToSubscribers() {
 <p>To confirm un-subscription, use this code: <strong>654321</strong></p>
 ```
 ---
+=======
+# jahnvirajput29
+A PHP-based XKCD comic subscription system with email verification, daily CRON jobs, and unsubscribe feature.
+
